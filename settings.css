@@ -1,0 +1,60 @@
+/* إعدادات صفحة الإعدادات */
+#settingsForm {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق الحقول */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* تنسيق زر الحفظ */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* إعدادات الإشعارات */
+#notification-settings {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* استجابة التصميم */
+@media (max-width: 600px) {
+    #settingsForm {
+        width: 100%;
+        padding: 15px;
+    }
+}
