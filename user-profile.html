@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملف المستخدم - تطبيق الدردشة</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <script src="js/profile.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>ملف المستخدم</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="chat.html">دردشة المستخدمين</a></li>
+                <li><a href="group-chat.html">دردشة المجموعات</a></li>
+                <li><a href="random-chat.html">دردشة عشوائية</a></li>
+                <li><a href="settings.html">الإعدادات</a></li>
+                <li><a href="logout.html">تسجيل الخروج</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile-info">
+            <h2>معلومات المستخدم</h2>
+            <div>
+                <strong>الاسم الظاهر:</strong> <span id="displayName">اسم المستخدم</span>
+            </div>
+            <div>
+                <strong>البريد الإلكتروني:</strong> <span id="email">user@example.com</span>
+            </div>
+            <div>
+                <strong>تاريخ الانضمام:</strong> <span id="joinDate">01 يناير 2023</span>
+            </div>
+        </section>
+
+        <section id="profile-settings">
+            <h3>تعديل الملف الشخصي</h3>
+            <form id="profileForm">
+                <label for="newDisplayName">الاسم الظاهر:</label>
+                <input type="text" id="newDisplayName" placeholder="أدخل الاسم الظاهر" required>
+                
+                <label for="newEmail">البريد الإلكتروني:</label>
+                <input type="email" id="newEmail" placeholder="أدخل البريد الإلكتروني" required>
+                
+                <button type="submit">حفظ التغييرات</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 تطبيق الدردشة. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إعدادات المستخدم - تطبيق الدردشة</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <script src="js/settings.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>إعدادات المستخدم</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="chat.html">دردشة المستخدمين</a></li>
+                <li><a href="group-chat.html">دردشة المجموعات</a></li>
+                <li><a href="random-chat.html">دردشة عشوائية</a></li>
+                <li><a href="logout.html">تسجيل الخروج</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="settingsForm">
+            <label for="displayName">الاسم الظاهر:</label>
+            <input type="text" id="displayName" placeholder="أدخل الاسم الظاهر" required>
+            
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" placeholder="أدخل البريد الإلكتروني" required>
+            
+            <label for="password">كلمة المرور الجديدة:</label>
+            <input type="password" id="password" placeholder="أدخل كلمة المرور الجديدة">
+            
+            <label for="language">اللغة:</label>
+            <select id="language" required>
+                <option value="العربية">العربية</option>
+                <option value="الإنجليزية">الإنجليزية</option>
+            </select>
+            
+            <label for="notifications">الإشعارات:</label>
+            <input type="checkbox" id="notifications" checked>
+            <label for="notifications">تمكين الإشعارات</label>
+            
+            <button type="submit">حفظ التغييرات</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 تطبيق الدردشة. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>

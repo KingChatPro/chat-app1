@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإشعارات - تطبيق الدردشة</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <script src="js/notifications.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>الإشعارات</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="chat.html">دردشة المستخدمين</a></li>
+                <li><a href="group-chat.html">دردشة المجموعات</a></li>
+                <li><a href="random-chat.html">دردشة عشوائية</a></li>
+                <li><a href="settings.html">الإعدادات</a></li>
+                <li><a href="logout.html">تسجيل الخروج</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="notification-list">
+            <h2>قائمة الإشعارات</h2>
+            <ul>
+                <!-- سيتم ملء الإشعارات هنا بواسطة JavaScript -->
+                <li>مستخدم جديد انضم إلى الدردشة.</li>
+                <li>تلقيت رسالة جديدة من <strong>اسم المستخدم</strong>.</li>
+                <li>تم تحديث إعداداتك بنجاح.</li>
+            </ul>
+        </section>
+
+        <section id="notification-settings">
+            <h3>إعدادات الإشعارات</h3>
+            <label for="emailNotifications">الإشعارات عبر البريد الإلكتروني:</label>
+            <input type="checkbox" id="emailNotifications" checked>
+            <label for="emailNotifications">تمكين</label>
+
+            <label for="pushNotifications">الإشعارات الفورية:</label>
+            <input type="checkbox" id="pushNotifications" checked>
+            <label for="pushNotifications">تمكين</label>
+
+            <button id="saveSettingsButton">حفظ التغييرات</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 تطبيق الدردشة. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>

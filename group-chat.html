@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دردشة المجموعات - تطبيق الدردشة</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="js/group-chat.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>دردشة المجموعات</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="chat.html">دردشة المستخدمين</a></li>
+                <li><a href="random-chat.html">دردشة عشوائية</a></li>
+                <li><a href="settings.html">الإعدادات</a></li>
+                <li><a href="logout.html">تسجيل الخروج</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="group-chat-window">
+            <h2>المحادثة في المجموعة: <span id="groupName">اسم المجموعة</span></h2>
+            <div id="messages" class="messages">
+                <!-- سيتم ملء الرسائل هنا بواسطة JavaScript -->
+            </div>
+        </section>
+
+        <section id="message-input">
+            <textarea id="messageInput" placeholder="اكتب رسالتك هنا..." required></textarea>
+            <button id="sendMessageButton">إرسال</button>
+        </section>
+
+        <section id="group-members">
+            <h3>أعضاء المجموعة</h3>
+            <ul id="memberList">
+                <!-- سيتم ملء قائمة الأعضاء هنا بواسطة JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 تطبيق الدردشة. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>

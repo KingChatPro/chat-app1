@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية - تطبيق الدردشة</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>مرحباً بك في تطبيق الدردشة</h1>
+        <nav>
+            <ul>
+                <li><a href="chat.html">الدردشة</a></li>
+                <li><a href="group-chat.html">دردشة المجموعات</a></li>
+                <li><a href="random-chat.html">دردشة عشوائية</a></li>
+                <li><a href="settings.html">الإعدادات</a></li>
+                <li><a href="logout.html">تسجيل الخروج</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="online-users">
+            <h2>المستخدمون المتصلون</h2>
+            <ul id="userList">
+                <!-- سيتم ملء قائمة المستخدمين المتصلين هنا بواسطة JavaScript -->
+            </ul>
+        </section>
+
+        <section id="notifications">
+            <h2>الإشعارات</h2>
+            <div id="notificationList">
+                <!-- سيتم ملء الإشعارات هنا بواسطة JavaScript -->
+            </div>
+        </section>
+
+        <section id="message-section">
+            <h2>أرسل رسالة إلى مستخدم</h2>
+            <input type="text" id="recipient" placeholder="اسم المستخدم المستلم" required>
+            <textarea id="messageInput" placeholder="اكتب رسالتك هنا..." required></textarea>
+            <button id="sendMessageButton">إرسال رسالة</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 تطبيق الدردشة. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="js/chat.js" defer></script>
+</body>
+</html>
